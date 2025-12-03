@@ -127,3 +127,61 @@ button{
   flex: 2;
   margin: 5px;
 }
+.eye{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: white;
+  border: 40px solid bisque;
+  width: 100px;
+  height: 50px;
+  
+  
+}
+.iris{
+  background-color: blue;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.pupil{
+  background-color: black;
+  width: 7px;
+  height: 7px;
+}
+.pair-of-eyes{
+  width: 500px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.outer-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  border: 4px solid maroon;
+  background: skyblue;
+}
+.flex-test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 4px solid darkslategray;
+  background: skyblue;
+}
+.container-test{
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+  border: 2px solid brown;
+}
+
