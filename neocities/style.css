@@ -6,3 +6,124 @@ body {
   color: black;
   font-family: Verdana;
 }
+ul {
+  color:blueviolet;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.alert {
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: red;
+  width: 160px;
+  padding: 10px;
+
+
+}
+.hyperlink{
+  color:green;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bullshit .silly{
+  color: green;
+}
+.bullshit{
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+.topster{
+  display: block;
+  height: 500px;
+  width: auto;
+}
+button{
+  box-sizing: border-box;
+  margin: 20px;
+  border: 5px;
+  border-style:outset;
+  border-color: grey;
+  padding: 10px;
+  background-color:lightgray;
+}
+.ironclad-card{
+  background-color: maroon;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border: 2px;
+  margin: 10px;
+  width: 100px;
+  float:left;
+}
+.top{
+  width: 100px;
+  border-style: solid;
+  color: orange;
+  box-sizing: border-box;
+  display: flex;
+  background-color: darkgray;
+  flex:1;
+  border-color: black;
+  border: 2px;
+}
+.name{
+  flex: 1;
+  color: white;
+}
+.art{
+  width: 100px;
+  border-style: solid;
+  border-color: darkgray;
+  border: 2px;
+  background-color: darkslategray;
+  padding: 30px;
+  box-sizing: border-box;
+  flex:1;
+  text-align: center;
+}
+.description{
+  width: 100px;
+  border-style: solid;
+  color: white;
+  background-color: darkgray;
+  padding: 5px;
+  border-color: black;
+  border: 2px;
+  box-sizing: border-box;
+  flex:1;
+}
+.real-card{
+  width: 60;
+  height: auto;
+  display: inline-block;
+}
+.card-comparison{
+  width: 400px;
+  margin-left: 50px;
+}
+.flex-box{
+  background-color: antiquewhite;
+  padding: 15px;
+  border: 5px solid blue;
+  display: flex;
+  
+}
+.inner-flex-box{
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-box{
+  background-color: cyan;
+  padding: 10px;
+  border: 5px solid blue;
+  flex: 1;
+  margin: 5px;
+}
+.inner-box2{
+  background-color: cyan;
+  padding: 10px;
+  border: 5px solid blue;
+  flex: 2;
+  margin: 5px;
+}
