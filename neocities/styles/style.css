@@ -1,0 +1,215 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  color: black;
+  font-family: Verdana;
+}
+ul {
+  color:blueviolet;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.alert {
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: red;
+  width: 160px;
+  padding: 10px;
+
+
+}
+.hyperlink{
+  color:green;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bullshit .silly{
+  color: green;
+}
+.bullshit{
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+.topster{
+  display: block;
+  height: 500px;
+  width: auto;
+}
+button{
+  box-sizing: border-box;
+  margin: 20px;
+  border: 5px;
+  border-style:outset;
+  border-color: gray;
+  padding: 10px;
+  background-color:lightgray;
+}
+button:hover{
+  background-color: rgb(172, 172, 172);
+}
+#surprise{
+  background-color: green;
+  color: palevioletred;
+  font-size: 100;
+  width: 500px;
+  height: 500px;
+}
+#surprise:hover{
+  background-color: black;
+}
+.scary{
+  color: white;
+  height: 1000px;
+  font-size:10cm;
+  margin: 0px;
+  display: flex;
+}
+.scary:hover{
+  color: aqua;
+  background-color: black;
+}
+
+
+.ironclad-card{
+  background-color: maroon;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border: 2px;
+  margin: 10px;
+  width: 100px;
+  float:left;
+}
+.top{
+  width: 100px;
+  border-style: solid;
+  color: orange;
+  box-sizing: border-box;
+  display: flex;
+  background-color: darkgray;
+  flex:1;
+  border-color: black;
+  border: 2px;
+}
+.name{
+  flex: 1;
+  color: white;
+}
+.art{
+  width: 100px;
+  border-style: solid;
+  border-color: darkgray;
+  border: 2px;
+  background-color: darkslategray;
+  padding: 30px;
+  box-sizing: border-box;
+  flex:1;
+  text-align: center;
+}
+.description{
+  width: 100px;
+  border-style: solid;
+  color: white;
+  background-color: darkgray;
+  padding: 5px;
+  border-color: black;
+  border: 2px;
+  box-sizing: border-box;
+  flex:1;
+}
+.real-card{
+  width: 60;
+  height: auto;
+  display: inline-block;
+}
+.card-comparison{
+  width: 400px;
+  margin-left: 50px;
+}
+.flex-box{
+  background-color: antiquewhite;
+  padding: 15px;
+  border: 5px solid blue;
+  display: flex;
+  
+}
+.inner-flex-box{
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-box{
+  background-color: cyan;
+  padding: 10px;
+  border: 5px solid blue;
+  flex: 1;
+  margin: 5px;
+}
+.inner-box2{
+  background-color: cyan;
+  padding: 10px;
+  border: 5px solid blue;
+  flex: 2;
+  margin: 5px;
+}
+.eye{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: white;
+  border: 40px solid bisque;
+  width: 100px;
+  height: 50px;
+  
+  
+}
+.iris{
+  background-color: blue;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.pupil{
+  background-color: black;
+  width: 7px;
+  height: 7px;
+}
+.pair-of-eyes{
+  width: 500px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.outer-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  border: 4px solid maroon;
+  background: skyblue;
+}
+/*test
+*/
+.flex-test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 4px solid darkslategray;
+  background: skyblue;
+}
+.container-test{
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+  border: 2px solid brown;
+}
+
