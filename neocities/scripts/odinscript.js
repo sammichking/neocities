@@ -1,5 +1,8 @@
 parseInt(prompt("Enter a number"));
 
+
+
+
 function parseInt(input){
     
     for (let i = 0; i<=input;i++){
