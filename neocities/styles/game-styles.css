@@ -37,3 +37,13 @@ h1{
     align-items: center;
     justify-content: center;
 }
+#ancestor #child{
+    color: red;
+}
+#ancestor #child > img{
+    color: aqua;
+    background-color: blue;
+    border-radius: 8px;
+    width: 400px;
+    height: auto;
+}
