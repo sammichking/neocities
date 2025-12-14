@@ -4,12 +4,26 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "Music recs",
+            "request": "launch",
+            "type": "chrome",
+            "url": "file:///C:/Users/sammi/Documents/coding/New%20folder/neocities/neocities/pages/musicReccs.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Rock Paper Scissors",
+            "request": "launch",
+            "type": "chrome",
+            "url": "file:///C:/Users/sammi/Documents/coding/New%20folder/neocities/neocities/pages/games.html",
+            "webRoot": "${workspaceFolder}"
+        },
 
         {
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "https://www.albumoftheyear.org/album/1511616-dove-ellis-blizzard.php",
+            "url": "./index.html",
             "webRoot": "${workspaceFolder}"
         },
         

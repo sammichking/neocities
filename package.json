@@ -13,12 +13,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/sammichking/neocities/issues"
   },
   "homepage": "https://github.com/sammichking/neocities#readme",
   "dependencies": {
-    "puppeteer": "^24.32.1"
+    "puppeteer": "^24.33.0"
   }
 }
