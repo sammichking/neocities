@@ -1,7 +1,7 @@
 import puppeteer from "puppeteer";
 
 
-const url = "https://www.musictaste.xyz/release/wXVWsefP8vxb_";
+const url = "https://www.musictaste.xyz/release/Q5jZmQz5mfO8";
 
 const main = async() => {
     const browser = await puppeteer.launch({headless:false});
@@ -22,8 +22,20 @@ const main = async() => {
                 if (spans[i].getAttribute('color') == 'sub'){
                     const goodSpan = spans[i];
                     console.log(goodSpan);
-                    const albumSelector = goodSpan.lastElementChild;
-                    const artistName = goodSpan.lastElementChild.textContent;
+                    let artistSpan = goodSpan.firstElementChild;
+                    let artistName = goodSpan.firstElementChild.textContent;
+                    let checker = 0;
+                    while (checker == 0){
+                        if (artistSpan.nextElementSibling != null){
+                            let tempName = artistName + ", " + artistSpan.nextElementSibling.textContent;
+                            artistSpan = artistSpan.nextElementSibling;
+                            artistName = tempName;
+                        }
+                        else{
+                            checker = 1;
+                        }
+                    }
+                    
                     console.log(artistName)
                     
                     //const artistName = 5;
@@ -43,8 +55,6 @@ const main = async() => {
         
 
     }, url)
-    await page.screenshot({path:'musictaste2.png',fullPage:true});
-    await page.screenshot({path:'musictaste3.png',fullPage:true});
     console.log(bookData[0]);
     console.log(bookData[1]);
     console.log(bookData[2]);
