@@ -1,4 +1,7 @@
-import puppeteer from "puppeteer";
+//const { default: puppeteer } = require("puppeteer");
+
+//import puppeteer from "puppeteer";
+var puppeteer = require("puppeteer")
 
 const url = "https://www.musictaste.xyz/release/Q5jZmQz5mfO8"
 //let url = prompt("Submit a musictaste.xyz link for the album!");
