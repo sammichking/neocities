@@ -1,9 +1,10 @@
 import puppeteer from "puppeteer";
 
+const url = "https://www.musictaste.xyz/release/Q5jZmQz5mfO8"
+//let url = prompt("Submit a musictaste.xyz link for the album!");
 
-const url = "https://www.musictaste.xyz/release/Q5jZmQz5mfO8";
-
-const main = async() => {
+async function albumRecommendation(url){
+    
     const browser = await puppeteer.launch({headless:false});
     const page = await browser.newPage();
     await page.goto(url, {waitUntil:'networkidle2',waitUntil:'domcontentloaded',waitUntil:'load',waitUntil:'networkidle0'});
@@ -62,4 +63,4 @@ const main = async() => {
     await browser.close();
 }
 
-main()
+albumRecommendation(url);
