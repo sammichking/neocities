@@ -1,0 +1,73 @@
+.bigContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.stealthyPadder{
+    flex: 1;
+    justify-content: center;
+    
+}
+.container{
+    
+    justify-content: center;
+    
+    margin: 2px;
+}
+
+
+
+.rowContainer{
+    display: flex;
+    width: 320px;
+    height: auto;
+    
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -1px;
+    margin-right:-1px;
+    border-left: 2px solid rgb(211,211,211);
+    border-right: 2px solid rgb(211,211,211);
+}
+.cell{
+    aspect-ratio: 1/1;
+    flex: auto;
+    margin:-1px;
+    background-color:white;
+    border:1px solid rgba(211,211,211,0.2)
+}
+.cell:hover{
+    background-color: rgb(237, 237, 237);
+}
+.palette{
+    display: flex;
+    width: 320px;
+    height: 20px;   
+}
+.colour{
+    flex:auto;
+    
+    margin: 2px;
+}
+.colour:hover{
+    border: 1px solid lightgrey;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+  box-sizing: border-box;
+  border: 5px;
+  border-style:outset;
+  border-color: gray;
+  padding: 10px;
+  background-color:lightgray;
+
+}
+button:hover{
+  background-color: rgb(172, 172, 172);
+}

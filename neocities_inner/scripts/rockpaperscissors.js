@@ -4,6 +4,8 @@
 //0 = paper
 //1 = scissors
 //2 = rock
+var record = [];
+
 
 class choice{
     
@@ -59,14 +61,6 @@ for (let i=0;i<input_choices.length;i++){
 })
 }
 
-
-
-
-
-
-
-
-
 function playGame(input){
     let com_number = Math.floor(Math.random()*3);
     let com_choices = [new paper(),new scissors(),new rock()];
@@ -78,13 +72,35 @@ function playGame(input){
         alert("Opponent threw " + com_choice.getName() + ", you won!");
         let current_wins = Number(document.getElementById("wins").innerHTML);
         let new_wins = current_wins + 1;
+        let record = JSON.parse(window.localStorage.getItem("record"));
+        record[0] = new_wins;
+        window.localStorage.setItem("record", JSON.stringify(record));
         document.getElementById("wins").innerHTML = new_wins;
     }
     else if (input.weakness == com_choice.getName()){
         alert("Opponent threw " + com_choice.getName() + ", you lose...");
         let current_losses = Number(document.getElementById("losses").innerHTML);
         let new_losses = current_losses + 1;
+        let record = JSON.parse(window.localStorage.getItem("record"));
+        record[1] = new_losses;
+        window.localStorage.setItem("record", JSON.stringify(record));
         document.getElementById("losses").innerHTML = new_losses;
+    }
+}
+
+window.onload = function() {
+    if (window.localStorage.getItem("record") !== null){
+        let record = JSON.parse(window.localStorage.getItem("record"));
+        let wins = record[0];
+        document.getElementById("wins").innerHTML = wins;
+        let losses = record[1];
+        document.getElementById("losses").innerHTML = losses;
+
+    }
+    else{
+        record.push(0)
+        record.push(0)
+        window.localStorage.setItem("record", JSON.stringify(record));
     }
 }
 
