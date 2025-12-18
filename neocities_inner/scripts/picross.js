@@ -20,7 +20,8 @@ for (let i=0;i<palette.length;i++){
 
 function removeAll(){
     let drawingProper = document.querySelector(".drawingProper")
-    for(let i=0;i<rows;i++){
+    let drawingProperChildren = Array.from(document.querySelectorAll(".drawingProper div"))
+    for(let i=0;i<2;i++){
         let rowDestinedForDeath = drawingProper.firstElementChild;
         drawingProper.removeChild(rowDestinedForDeath)
     }
@@ -30,9 +31,17 @@ function removeAll(){
 
 function addAll(rows,columns){
     let cells = [];
+    let drawingProper = document.querySelector(".drawingProper")
+    let leftOverChildren = Array.from(document.querySelectorAll(".drawingProper .rowContainer"))
+    
+    if (leftOverChildren.length !== 0){
+        for (let i=0;i<leftOverChildren.length;i++){
+            let firstToDie = drawingProper.firstElementChild;
+            drawingProper.removeChild(firstToDie);
+        }
+    }   
     for (let i=0;i<rows;i++){
-        let drawingProper = document.querySelector(".drawingProper")
-
+        
         let rowContainer = document.createElement("div");
         rowContainer.setAttribute("class","rowContainer");
         if (i==0){
@@ -55,7 +64,28 @@ function addAll(rows,columns){
 
 }
 
-const practiceCode = "010010,111111,100001,110011,100001,101101,100001,111111"
+const picrossCode1 = "010010,111111,100001,110011,100001,101101,100001,111111"
+let currentCode = picrossCode1
+const picrossCode2 ="000010000,001101100,011000110,110000011,111111111,100000001,100111001,100101001,100101001"
+
+let picrossCodes = [picrossCode1,picrossCode2];
+
+let next_button = document.querySelector(".next");
+next_button.addEventListener("click", () => {
+    for (let i=0;i<picrossCodes.length;i++){
+        if (picrossCodes[i] == currentCode && i !== (picrossCodes.length - 1)){
+            removeAll();
+            currentCode = picrossCodes[i+1];
+            
+            initialisation(currentCode);
+        }
+    }
+})
+
+
+
+
+
 
 function initialisation(drawingCode){
     let codeRows = drawingCode.split(",");
@@ -79,7 +109,7 @@ function initialisation(drawingCode){
     
 }
 
-initialisation(practiceCode);
+initialisation(picrossCode1);
 
 function setCode(codeRows,cells){
     let wholeCode = codeRows.join("");
@@ -166,7 +196,11 @@ function hintMaker(codeRows){
             if (rowArray[j] == "1"){
                 counter += 1;
             }
-            if ((rowArray[j] == "0" && counter !== 0) || j == (rowArray.length-1)){
+            if ((rowArray[j] == "0" && counter !== 0)){
+                rowHint.push(counter);
+                counter = 0;
+            }
+            else if ((j == (rowArray.length-1)) && counter !== 0){
                 rowHint.push(counter);
                 counter = 0;
             }
@@ -176,6 +210,14 @@ function hintMaker(codeRows){
     
     let rowHintContainer = document.querySelector(".rowHints");
     let rowContainers = Array.from(document.querySelectorAll(".rowContainer"));
+    let leftOverChildren = Array.from(rowHintContainer.querySelectorAll(".rowHint"))
+    
+    if (leftOverChildren.length !== 0){
+        for (let i=0;i<leftOverChildren.length;i++){
+            let firstToDie = rowHintContainer.firstElementChild;
+            rowHintContainer.removeChild(firstToDie);
+        }
+    }  
     for (let i=0;i<rowContainers.length;i++){
         //I put the row hint in this spot:
         //parentNode.insertBefore(newNode, referenceNode)
@@ -183,6 +225,7 @@ function hintMaker(codeRows){
         //for each cell in a certain row container
         //check if hasAttribute(.on), if yes then counter += 1;
         //if not then hints.push(counter), counter reset to 0
+        
         let niceNumbers = rowHints[i].join(" ");
         let hint = document.createElement("div");
         hint.setAttribute("class","rowHint");
@@ -203,7 +246,11 @@ function hintMaker(codeRows){
             if (numberOfInterest == "1"){
                 counter += 1;
             }
-            if ((numberOfInterest == "0" && counter !== 0) || j == (codeRows.length-1)){
+            if ((numberOfInterest == "0" && counter !== 0)){
+                columnHint.push(counter);
+                counter = 0;
+            }
+            else if ((j == (codeRows.length-1)) && counter !== 0){
                 columnHint.push(counter);
                 counter = 0;
             }
@@ -211,6 +258,14 @@ function hintMaker(codeRows){
         columnHints.push(columnHint);
     }
     let columnHintContainer = document.querySelector(".columnHints");
+    leftOverChildren = Array.from(columnHintContainer.querySelectorAll(".columnHint"))
+    
+    if (leftOverChildren.length !== 0){
+        for (let i=0;i<leftOverChildren.length;i++){
+            let firstToDie = columnHintContainer.firstElementChild;
+            columnHintContainer.removeChild(firstToDie);
+        }
+    }  
     for (let i=0;i<codeRows[0].length;i++){
         let niceNumbers = columnHints[i];
         let hint = document.createElement("div");
