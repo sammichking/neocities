@@ -68,6 +68,7 @@ const picrossCode1 = "010010,111111,100001,110011,100001,101101,100001,111111"
 let currentCode = picrossCode1
 const picrossCode2 ="000010000,001101100,011000110,110000011,111111111,100000001,100111001,100101001,100101001"
 
+
 let picrossCodes = [picrossCode1,picrossCode2];
 
 let next_button = document.querySelector(".next");
@@ -78,6 +79,7 @@ next_button.addEventListener("click", () => {
             currentCode = picrossCodes[i+1];
             
             initialisation(currentCode);
+            break
         }
     }
 })
