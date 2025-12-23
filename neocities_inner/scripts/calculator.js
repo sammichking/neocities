@@ -39,6 +39,11 @@ let numberButtons = document.querySelectorAll(".container .calculator .frame .ro
 for (let i=0; i<numberButtons.length;i++){
     numberButtons[i].addEventListener("click", () => {
         let currentDisplay = display.textContent;
+        if (currentDisplay == "5318008" || currentDisplay == "58008"){
+            let pair = document.createElement("div");
+            pair.textContent = "(.)(.)"
+            body.appendChild(pair);
+        }
         let newDisplay = currentDisplay + numberButtons[i].textContent;
         display.textContent = newDisplay;
     })
@@ -52,6 +57,11 @@ for (let i=0; i<operationButtons.length;i++){
 for (let i=0; i<operationButtons.length;i++){
     operationButtons[i].addEventListener("click", () => {
         let currentDisplay = display.textContent;
+        if (currentDisplay == "5318008" || currentDisplay == "58008"){
+            let pair = document.createElement("div");
+            pair.textContent = "(.)(.)"
+            body.appendChild(pair);
+        }
         if (currentDisplay.length > 0){
             if (currentOperation.length == 2){
                 let midpoint = currentDisplay.split(currentOperation[1])
@@ -83,21 +93,31 @@ let equalsButton = document.querySelector(".container .calculator .frame .row .e
 
 equalsButton.addEventListener("click", () => {
     let currentDisplay = display.textContent;
-        if (currentDisplay.length > 0){
-            if (currentOperation.length == 2){
-                let midpoint = currentDisplay.split(currentOperation[1])
-                currentOperation[0][1] = midpoint[1]
-                let outcome = operate(currentOperation[1],Number(currentOperation[0][0]),Number(currentOperation[0][1]))
-                display.textContent = outcome
-                currentOperation = [[]];
-            }
+    if (currentDisplay == "5318008" || currentDisplay == "58008"){
+        let pair = document.createElement("div");
+        pair.textContent = "(.)(.)"
+        body.appendChild(pair);
+    }
+    if (currentDisplay.length > 0){
+        if (currentOperation.length == 2){
+            let midpoint = currentDisplay.split(currentOperation[1])
+            currentOperation[0][1] = midpoint[1]
+            let outcome = operate(currentOperation[1],Number(currentOperation[0][0]),Number(currentOperation[0][1]))
+            display.textContent = outcome
+            currentOperation = [[]];
         }
+    }
 })
 
 let decimalButton = document.querySelector(".container .calculator .frame .row .decimal")
 
 decimalButton.addEventListener("click", () => {
     let currentDisplay = display.textContent;
+    if (currentDisplay == "5318008" || currentDisplay == "58008"){
+            let pair = document.createElement("div");
+            pair.textContent = "(.)(.)"
+            body.appendChild(pair);
+        }
     let newDisplay = currentDisplay + decimalButton.textContent;
     display.textContent = newDisplay;
 })
