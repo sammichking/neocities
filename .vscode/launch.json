@@ -21,10 +21,10 @@
             "webRoot": "${workspaceFolder}"
         },
         {
-            "name": "Rock Paper Scissors",
+            "name": "Calc",
             "request": "launch",
             "type": "chrome",
-            "url": "file:///C:/Users/sammi/Documents/coding/New%20folder/neocities_outer/neocities_inner/pages/games.html",
+            "url": "file:///C:/Users/sammi/Documents/coding/New%20folder/neocities_outer/neocities_inner/pages/calculator.html",
             "webRoot": "${workspaceFolder}"
         },
 
