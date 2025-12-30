@@ -7,52 +7,68 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <a href="../index.html" rel="noopener, noreferrer">Home</a>
-    </div>
-
-    <div class="bigContainer">
-        
-        
-
-        <div class="container">
-            <div class="palette">
-                <div class="colour" id="red"></div>
-                <div class="colour" id="orange"></div>
-                <div class="colour" id="yellow"></div>
-                <div class="colour" id="green"></div>
-                <div class="colour" id="blue"></div>
-                <div class="colour" id="indigo"></div>
-                <div class="colour" id="violet"></div>
-                <div class="colour" id="black"></div>
-                <div class="colour" id="white"></div>
-                <div class="colour" id="grey"></div>
-            </div>
-            <div class="drawingContainer">
-                <!-- Okay so for the javascript realisitically I could have it be size changeable
-                like create rows of length x, y times. But first I need to figure out how to make a row
-                nicely, I'm thinking a bounded flexbox with x boxes inside with 0 margin between them
-                maybe a for loop which gives them names like (1,5)
-
-                Test first with html to get a gist
-                
-                <div class="rowContainer">
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                </div>
-                -->
-                
-
-
-            </div>
+    <aside>
+      <p>
+        <div><a class="hyperlink" href="../index.html">Home</a></div>
+        <div><a class="hyperlink" href="https://www.youtube.com/watch?v=nCb0eMy1Mi8" target="_blank" rel="noopener noreferrer">Did you know?</a></div>
+        <div><a class="hyperlink" href="./about.html" rel="noopener noreferrer"> Thought in process</a></div>
+        <div><a class="hyperlink" href="./games.html" rel="noopener">Games</a></div>
+        <!--<a class="hyperlink" href="./musicReccs.html" rel="noopener">Music Recommendations</a> -->
+        <div><a class="hyperlink" href="./drawing.html" rel="noopener">Drawing</a></div>
+        <div><a class="hyperlink" href="./calculator.html" rel="noopener">Calc</a></div>
+        <div><a class="hyperlink" href="./bullshit.html" rel="noopener noreferrer"> Some bullshit</a></div>
+        <div><a class="hyperlink" href="./elementTesting.html" rel="noopener noreferrer">Element testing</a></div>
+      </p>
+    </aside>
+    <main>
+        <div>
+            <a href="../index.html" rel="noopener, noreferrer">Home</a>
         </div>
-        
-        
-    </div>
-    <div class="buttons">
-        <button class="sizeButton">Size</button>
-    </div>
+
+        <div class="bigContainer">
+            
+            
+
+            <div class="container">
+                <div class="palette">
+                    <div class="colour" id="red"></div>
+                    <div class="colour" id="orange"></div>
+                    <div class="colour" id="yellow"></div>
+                    <div class="colour" id="green"></div>
+                    <div class="colour" id="blue"></div>
+                    <div class="colour" id="indigo"></div>
+                    <div class="colour" id="violet"></div>
+                    <div class="colour" id="black"></div>
+                    <div class="colour" id="white"></div>
+                    <div class="colour" id="grey"></div>
+                </div>
+                <div class="drawingContainer">
+                    <!-- Okay so for the javascript realisitically I could have it be size changeable
+                    like create rows of length x, y times. But first I need to figure out how to make a row
+                    nicely, I'm thinking a bounded flexbox with x boxes inside with 0 margin between them
+                    maybe a for loop which gives them names like (1,5)
+
+                    Test first with html to get a gist
+                    
+                    <div class="rowContainer">
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                    -->
+                    
+
+
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="buttons">
+            <button class="sizeButton">Size</button>
+        </div>
+    </main>
+    
     <script src="../scripts/drawing.js"></script>
     
     

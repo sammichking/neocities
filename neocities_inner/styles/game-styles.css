@@ -47,3 +47,21 @@ h1{
     width: 400px;
     height: auto;
 }
+aside {
+  width: 10%;
+  float: left;
+  margin-right: 25px;
+  padding-bottom: 100%;
+  padding-right: 3px;
+  box-shadow: inset -10px 0px 10px -9px rgb(161, 120, 186);
+  text-align: center;
+  font-size: 14pt;
+}
+main {
+  float: inline-start;
+  width: 80%;
+}
+.hyperlink{
+  color:green;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

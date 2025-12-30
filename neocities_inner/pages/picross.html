@@ -7,56 +7,72 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <a href="../index.html" rel="noopener, noreferrer">Home</a>
-    </div>
-    <div>
-        <a href="https://gerrycanavan.wordpress.com/2005/07/27/the-rules-of-picross/" rel="noopener, noreferrer" target="_blank">Picross Rules Explanation!</a>
-    </div>
-    <div>If playing on mobile, tap on black square up here for your taps to be "fill" and tap on the grey square for taps to be "empty"</div>
-    <div>If playing on web, left click is "fill", right click is "empty"</div>
-    <div>If you guess wrong, the square will be marked with an X and display the correct color</div>
-    <div>I only have two puzzle atm but I'll add more soon</div>
-    <button class="next">Next Puzzle</button>
-    
-    <div class="palette2">
-                <div class="colour2" id="black"></div>
-                <div class="colour2" id="lightgrey"></div>
-            </div>
-    <div class="bigContainer">
-            
-
-            
-            
-            <div class="drawingContainer">
-                <div class="columnHints">
-
-                </div>
-                
-                <div class="inlineWithDrawing">
-                    <div class="rowHints"></div>
-                    <div class="drawingProper"></div>
-                </div>
-                
-                
-                <!-- Okay so for the javascript realisitically I could have it be size changeable
-                like create rows of length x, y times. But first I need to figure out how to make a row
-                nicely, I'm thinking a bounded flexbox with x boxes inside with 0 margin between them
-                maybe a for loop which gives them names like (1,5)
-
-                Test first with html to get a gist
-                
-                <div class="rowContainer">
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                </div>
-                -->
-            </div>
+    <aside>
+      <p>
+        <div><a class="hyperlink" href="../index.html">Home</a></div>
+        <div><a class="hyperlink" href="https://www.youtube.com/watch?v=nCb0eMy1Mi8" target="_blank" rel="noopener noreferrer">Did you know?</a></div>
+        <div><a class="hyperlink" href="./about.html" rel="noopener noreferrer"> Thought in process</a></div>
+        <div><a class="hyperlink" href="./games.html" rel="noopener">Games</a></div>
+        <!--<a class="hyperlink" href="./musicReccs.html" rel="noopener">Music Recommendations</a> -->
+        <div><a class="hyperlink" href="./drawing.html" rel="noopener">Drawing</a></div>
+        <div><a class="hyperlink" href="./calculator.html" rel="noopener">Calc</a></div>
+        <div><a class="hyperlink" href="./bullshit.html" rel="noopener noreferrer"> Some bullshit</a></div>
+        <div><a class="hyperlink" href="./elementTesting.html" rel="noopener noreferrer">Element testing</a></div>
+      </p>
+    </aside>
+    <main>
+        <div>
+            <a href="../index.html" rel="noopener, noreferrer">Home</a>
         </div>
+        <div>
+            <a href="https://gerrycanavan.wordpress.com/2005/07/27/the-rules-of-picross/" rel="noopener, noreferrer" target="_blank">Picross Rules Explanation!</a>
+        </div>
+        <div>If playing on mobile, tap on black square up here for your taps to be "fill" and tap on the grey square for taps to be "empty"</div>
+        <div>If playing on web, left click is "fill", right click is "empty"</div>
+        <div>If you guess wrong, the square will be marked with an X and display the correct color</div>
+        <div>I only have two puzzle atm but I'll add more soon</div>
+        <button class="next">Next Puzzle</button>
         
-        
-    </div>
+        <div class="palette2">
+                    <div class="colour2" id="black"></div>
+                    <div class="colour2" id="lightgrey"></div>
+                </div>
+        <div class="bigContainer">
+                
+
+                
+                
+                <div class="drawingContainer">
+                    <div class="columnHints">
+
+                    </div>
+                    
+                    <div class="inlineWithDrawing">
+                        <div class="rowHints"></div>
+                        <div class="drawingProper"></div>
+                    </div>
+                    
+                    
+                    <!-- Okay so for the javascript realisitically I could have it be size changeable
+                    like create rows of length x, y times. But first I need to figure out how to make a row
+                    nicely, I'm thinking a bounded flexbox with x boxes inside with 0 margin between them
+                    maybe a for loop which gives them names like (1,5)
+
+                    Test first with html to get a gist
+                    
+                    <div class="rowContainer">
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            
+            
+        </div>
+    </main>
+    
     <script src="../scripts/picross.js"></script>
     
     
