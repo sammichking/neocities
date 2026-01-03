@@ -1,9 +1,8 @@
 //let rows = 8;
 //let columns = 6;
 //addAll()
-let deviceType = "web";
-let fff = typeof screen.orientation
-if (typeof screen.orientation !== "undefined" && typeof screen.orientation !== "object"){
+let deviceType = "mobile";
+if (window.innerWidth<= 1000){
     deviceType = "mobile";
 }
 

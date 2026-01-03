@@ -6,10 +6,10 @@
     "configurations": [
         
     {
-        "name": "Picross",
+        "name": "Albums",
         "request": "launch",
         "type": "chrome",
-        "url": "file:///C:/Users/sammi/Documents/coding/New%20folder/neocities_outer/neocities_inner/pages/picross.html",
+        "url": "file:///C:/Users/sammi/Documents/coding/New%20folder/neocities_outer/neocities_inner/pages/albums2024.html",
         "webRoot": "${workspaceFolder}"
     },
 

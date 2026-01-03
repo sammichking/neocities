@@ -1,0 +1,22 @@
+p,h3,h1,h2{
+   margin-left: 20%;
+   margin-right: 20%; 
+}
+@media (max-width: 1000px){
+    p,h3,h1,h2{
+        margin-left: 5%;
+        margin-right: 5%; 
+    }
+}
+
+
+img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+.unc{
+    width: 30%;
+    height: auto;
+}
