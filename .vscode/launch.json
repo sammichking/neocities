@@ -4,12 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         
     {
-        "name": "Albums",
+        "name": "review",
         "request": "launch",
         "type": "chrome",
-        "url": "file:///C:/Users/sammi/Documents/coding/New%20folder/neocities_outer/neocities_inner/pages/albums2024.html",
+        "url": "file:///C:/Users/sammi/Documents/coding/New%20folder/neocities_outer/neocities_inner/pages/thoughts/games/cryptOfTheNecrodancer.html",
         "webRoot": "${workspaceFolder}"
     },
 
