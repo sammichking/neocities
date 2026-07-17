@@ -1,6 +1,7 @@
 let currentOperation = [[]];
 let display = document.querySelector(".container .calculator .frame .display");
 //test
+//test 2
 
 function operate (symbol,number1,number2){
 
