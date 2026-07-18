@@ -33,6 +33,7 @@ function addAll(rows,columns){
     let drawingProper = document.querySelector(".drawingProper")
     let leftOverChildren = Array.from(document.querySelectorAll(".drawingProper .rowContainer"))
     
+    //removes boxes from previous grid
     if (leftOverChildren.length !== 0){
         for (let i=0;i<leftOverChildren.length;i++){
             let firstToDie = drawingProper.firstElementChild;
@@ -66,9 +67,10 @@ function addAll(rows,columns){
 const picrossCode1 = "010010,111111,100001,110011,100001,101101,100001,111111"
 let currentCode = picrossCode1
 const picrossCode2 ="000010000,001101100,011000110,110000011,111111111,100000001,100111001,100101001,100101001"
+const picrossCode3="1111100110110,0010001111111,0010001111111,0010000111110,0010000011100,1111100001000,0000000000000,1100101000001,1100100100010,1010100010100,1010100001000,1001100001000,1001100001000"
 
 
-let picrossCodes = [picrossCode1,picrossCode2];
+let picrossCodes = [picrossCode1,picrossCode2,picrossCode3];
 
 let next_button = document.querySelector(".next");
 next_button.addEventListener("click", () => {
